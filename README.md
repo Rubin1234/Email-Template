@@ -1,17 +1,17 @@
 ## API Documentation for email template
 ======================================
 
-    ## For sending an email
+1) For sending an email
     url -> http://localhost/zerox-coding-test/public/api/send-email
 
-    ## API Request Field
+    API Request Field
     ==========================
     field -> required|array
     value -> required|array
     template_key -> string|required
     receiving_email_address -> string|email|required
 
-    ## Example
+    Example
     ================
     field => [
         0 => 'username',
@@ -26,7 +26,7 @@
 
 
 
-    ## Note: For Sending Mail Credentials
+    Note: For Sending Mail Credentials
     ================================================
      1) You can put mail gun credential in .env file
             MAIL_MAILER=smtp
@@ -38,6 +38,6 @@
             MAIL_FROM_ADDRESS="hello@example.com"
             MAIL_FROM_NAME="${APP_NAME}"
     
-    1) For AWS
+    2) For AWS
         AWS_ACCESS_KEY_ID= "ID"
         AWS_SECRET_ACCESS_KEY= "Secred Key"
